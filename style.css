@@ -1,0 +1,381 @@
+#Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    height: 30%;
+    transition: transform 0.3s; /* Add transition for smooth movement */
+    cursor: pointer;
+}
+
+#Logo:hover {
+    transform: translateY(-10px); /* Move the logo upward by 10 pixels on hover */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("assets/Background3.jpg"); 
+    background-color: #f4c531;
+}
+
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 85vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 50%;
+    padding: 1.5em 1.5em;
+    margin-top: 30px;
+    border-radius: 0.5em;
+    flex-wrap: wrap;
+}
+
+#inputs{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+#register-form input {
+    font-size: 1.05rem;
+    padding: 0.2rem 0.3em;
+    border-color: #942a26;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+#gender {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #923f3c95;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #333;
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+}
+
+#gender::-ms-expand {
+    display: none; /* Remove the default arrow in Internet Explorer */
+}
+
+#gender option {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+#gender:hover {
+    border-color: #a08530; /* Change border color on hover */
+}
+
+
+/* Styling for the options */
+#gender option {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+/* Styling for the hover effect on options */
+#gender option:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#register-form button {
+    padding: 0 1rem;
+
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    background-color: #f4c531;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #23234c;
+    padding: 0.6em 2em;
+}
+
+#end-button {
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    margin: 0 0 0 auto;
+    background-color: #000000e1;
+    border-radius: 0.2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.4em 1.5em;
+}
+
+/* CSS code for disabled buttons */
+button:disabled {
+    color: rgba(169, 75, 72, 0.44) !important;
+    background-color: rgb(226, 222, 222) !important;
+    cursor: not-allowed !important;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 85vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 4em 3em;
+    border-radius: 0.5em;
+}
+.container h3 {
+    font-size: 1.2em;
+    color: #23234c;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+.container #submit-button {
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    background-color: #f4c531;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #23234c;
+    padding: 0.6em 2em;
+}
+#error-message {
+    text-align: center;
+    margin-top: 1em;
+    background-color: #ffdde0;
+    color: #d62f2f;
+    padding: 0.2em 0;
+}
+.container #challenge {
+    border-radius: 50px;
+    background-color: rgba(247, 233, 185, 0.32);
+    font-size: 2em;
+    font-weight: 600;
+    color: #23234c;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.4em 0 1em 0;
+    padding: 1em 0;
+}
+.container input {
+    font-size: 1em;
+    font-weight: 600;
+    width: 2.35em;
+    color: #23234c;
+    text-align: center;
+    padding: 0 0.2em;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.12em solid #23234c;
+    margin: 0 0.25em;
+}
+.container input:focus {
+    border-color: rgba(255, 8, 0, 0.757);
+    outline: none;
+}
+/*Hide Number Arrows*/
+.container input[type="number"] {
+    -moz-appearance: textfield;
+}
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(251 243 221);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+#initiate-button,
+#show-charts-button {
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: #070707;
+    color: #fffffd;
+    border: 3px solid rgba(3, 0, 0, 0.979);
+    outline: none;
+    cursor: pointer;
+    padding: 0.8em 1.8em;
+    border-radius: 0.3em;
+    margin-top: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+#initiate-button:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px); /* Move the button upward by 5 pixels on hover */
+}
+
+#outcome {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #23234c;
+}
+#outcome span {
+    font-weight: 600;
+}
+.hide {
+    display: none;
+}
+#showpercentage {
+    color: black;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #f4c531;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+#showpercentage.hidden {
+    transform: translate(-100%, -50%);
+}
+
+#showpercentage button{
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    margin: 0 0 0 auto;
+    background-color: #000000e1;
+    border-radius: 0.2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.4em 1.5em;
+}
+
+#showcharts h3{
+    font-size: 2.2rem;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+#showcharts img{
+    margin-right: .5rem;
+}
+
+#showcharts button{
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    margin: 0 0 0 auto;
+    background-color: #000000e1;
+    border-radius: 0.2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.4em 1.5em;
+}
+
+#showallplayers {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    width: 85vw;
+    height: 20vh;
+    background-color: white;
+    margin-top: 190px;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 87%;
+    left: 50%;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+#showcharts {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #942a26;
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+}
+
+#showcharts.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.player-info {
+    background-color: #f2f2f295; /* Grey background color */
+    padding: 10px; /* Padding for content inside the div */
+    margin-bottom: 10px; /* Bottom margin */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.correct {
+    border-radius: 3px;
+    background-color: #b3ffb3; /* Light green background color for correct answers */
+}
+
+.incorrect {
+    border-radius: 3px;
+    background-color: #ff9999; /* Light red background color for incorrect answers */
+}
+
+.all-statistics-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #942a26; /* Adding a border as a separator */
+    padding-bottom: 5px;
+}
