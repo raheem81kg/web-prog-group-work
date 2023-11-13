@@ -32,14 +32,15 @@ body {
     background-color: #ffffff;
     width: 90%;
     max-width: 85vw;
+    max-height: 30vh;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 10%;
+    top: 12%;
     left: 50%;
     padding: 1.5em 1.5em;
     margin-top: 30px;
     border-radius: 0.5em;
-    flex-wrap: wrap;
+    overflow: scroll;
 }
 
 #inputs{
@@ -145,9 +146,9 @@ button:disabled {
     max-width: 85vw;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 55%;
     left: 50%;
-    padding: 4em 3em;
+    padding: 3em 2em;
     border-radius: 0.5em;
 }
 .container h3 {
@@ -319,15 +320,14 @@ button:disabled {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50vw;
     width: 85vw;
     height: 20vh;
     background-color: white;
-    margin-top: 190px;
+    margin-top: 170px;
     padding: 20px;
     border-radius: 10px;
     transform: translate(-50%, -50%);
-    top: 87%;
+    top: 85%;
     left: 50%;
     z-index: 1;
     overflow-y: scroll;
