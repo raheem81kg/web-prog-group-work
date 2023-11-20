@@ -381,7 +381,11 @@ function showCharts() {
 
         showpercentageDisplay.appendChild(genderChart);
         showpercentageDisplay.appendChild(percentageScoreChart);
+    } else {
+        // Display a message when no stats are available
+        showpercentageDisplay.innerHTML = "No chart statistics available.";
     }
+
     // Create close button
     const closeButton = document.createElement("button");
     closeButton.innerText = "Close Charts";
